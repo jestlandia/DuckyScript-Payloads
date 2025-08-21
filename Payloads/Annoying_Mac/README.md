@@ -19,4 +19,4 @@ The `annoying_mac.sh` script is responsible for toggling WiFi and mouse pointer 
 
 The `launchd_job.sh` script is responsible for scheduling a background job.
 
-The other functionality is performed by the DuckyScript itself (toggling of capslock, numlock, press arrow keys, etc).
+The other functionality is performed by the DuckyScript itself (toggling of capslock, enter, arrow keys).
