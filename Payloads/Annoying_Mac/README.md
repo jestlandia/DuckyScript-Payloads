@@ -4,7 +4,7 @@ REM AUTHOR: jest
 
 REM TARGET OS: MacOS
 
-REM DESCRIPTION: An annoying payload that utilizes ducky/bash scripts to randomly turn on and off: wifi, capslock, numlock, press arrow keys, and teleports the mouse pointer around the screen.
+REM DESCRIPTION: An annoying payload that utilizes ducky/bash scripts to randomly turn on and off: wifi, capslock, arrow keys, and teleports the mouse pointer around the screen.
 
 ---
 
