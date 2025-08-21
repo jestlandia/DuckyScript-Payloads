@@ -1,6 +1,6 @@
 REM TITLE: Annoying Mac
 
-REM AUTHOR: jest
+REM AUTHOR: jest (adapted from OSINTI4L's [Annoying Linux](https://github.com/OSINTI4L/DuckyScript-Payloads/tree/main/Payloads/Annoying_Linux))
 
 REM TARGET OS: MacOS
 
