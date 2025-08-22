@@ -12,9 +12,11 @@ move_mouse() {
 EOF
 }
 
-while true
-do
+duration=$((RANDOM % 11 + 30))
+end_time=$((SECONDS + duration))
 
+while [ $SECONDS -lt $end_time ]; 
+do
     networksetup -setairportpower "$WIFI_INTERFACE" off
 
     move_mouse 300 0
